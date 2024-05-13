@@ -1,0 +1,32 @@
+{
+  "name": "@apiverve/ipblacklistlookup",
+  "version": "1.0.0",
+  "description": "IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns the blacklist name and the reason for the blacklist.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/ipblacklistlookup-API.git"
+  },
+  "keywords": [
+    "ip blacklist lookup"," ip blacklist lookup api"," ip blacklist lookup tool"," ip blacklist lookup software"," ip blacklist lookup service"," ip blacklist lookup library"," ip blacklist lookup sdk"," ip blacklist lookup code"," ip blacklist lookup script"," ip blacklist lookup program"," ip blacklist lookup application"," ip blacklist lookup app"," ip blacklist lookup utility"," ip blacklist lookup helper"," ip blacklist lookup helper tool"," ip blacklist lookup helper software"," ip blacklist lookup helper service"," ip blacklist lookup helper library"," ip blacklist lookup helper sdk"," ip blacklist lookup helper code"," ip blacklist lookup helper script"," ip blacklist lookup helper program"," ip blacklist lookup helper application"," ip blacklist lookup helper app"," ip blacklist lookup helper utility"," ip blacklist lookup helper"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/ipblacklistlookup-API/issues"
+  },
+  "homepage": "https://github.com/apiverve/ipblacklistlookup-API",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1",
+    "dotenv": "^2.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "3.3.2",
+    "promise": "^7.1.1",
+    "request": "^2.69.0"
+  }
+}

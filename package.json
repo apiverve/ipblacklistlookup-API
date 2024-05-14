@@ -11,7 +11,7 @@
     "url": "git+https://github.com/apiverve/ipblacklistlookup-API.git"
   },
   "keywords": [
-    "ip blacklist lookup"," ip blacklist lookup api"," ip blacklist lookup tool"," ip blacklist lookup software"," ip blacklist lookup service"," ip blacklist lookup library"," ip blacklist lookup sdk"," ip blacklist lookup code"," ip blacklist lookup script"," ip blacklist lookup program"," ip blacklist lookup application"," ip blacklist lookup app"," ip blacklist lookup utility"," ip blacklist lookup helper"," ip blacklist lookup helper tool"," ip blacklist lookup helper software"," ip blacklist lookup helper service"," ip blacklist lookup helper library"," ip blacklist lookup helper sdk"," ip blacklist lookup helper code"," ip blacklist lookup helper script"," ip blacklist lookup helper program"," ip blacklist lookup helper application"," ip blacklist lookup helper app"," ip blacklist lookup helper utility"," ip blacklist lookup helper"
+    "ip blacklist lookup","ip blacklist lookup api","ip blacklist lookup tool","ip blacklist lookup software","ip blacklist lookup service"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
@@ -27,6 +27,6 @@
   "dependencies": {
     "node-fetch": "3.3.2",
     "promise": "^7.1.1",
-    "request": "^2.69.0"
+    "axios": "^0.15.3"
   }
 }

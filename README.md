@@ -1,7 +1,7 @@
 IP Blacklist Lookup API
 ============
 
-IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns the blacklist name and the reason for the blacklist.
+IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns if the IP is found in a blacklist.
 
 ![Build Status](https://img.shields.io/badge/build-passing-green)
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
@@ -76,7 +76,7 @@ api.execute(query, function (error, data) {
     "ipDetails": {
       "range": [
         3373776896,
-        3373778943
+        3373785087
       ],
       "country": "BR",
       "region": "",

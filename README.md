@@ -83,7 +83,8 @@ api.execute(query, function (error, data) {
       "timezone": "America/Sao_Paulo"
     },
     "parsed": true
-  }
+  },
+  "code": 200
 }
 ```
 

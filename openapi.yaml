@@ -1,0 +1,74 @@
+openapi: 3.0.4
+info:
+  title: IP Blacklist Lookup
+  description: IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns if the IP is found in a blacklist.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/ipblacklistlookup:
+    get:
+      summary: Lookup IP in Blacklist
+      description: IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns if the IP is found in a blacklist.
+      operationId: ipblacklistlookup
+      parameters:
+      - name: ip
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The IP address to lookup in the blacklist (e.g., 201.23.192.173)
+        example: 201.23.192.173
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  ipAddress: 201.23.192.173
+                  isIPBlacklisted: true
+                  ipDetails:
+                    range:
+                    - 3373776896
+                    - 3373785087
+                    country: BR
+                    region: ''
+                    timezone: America/Sao_Paulo
+                  parsed: true
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []

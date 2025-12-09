@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/ipblacklistlookup",
+  "version": "1.1.12",
+  "description": "IP Blacklist Lookup is a simple tool for looking up if an IP address is in a blacklist. It returns if the IP is found in a blacklist.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/ipblacklistlookup-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "ip blacklist lookup", "ip blacklist lookup api", "ip blacklist lookup tool", "ip blacklist lookup software", "ip blacklist lookup service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/ipblacklistlookup-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/ipblacklistlookup?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
